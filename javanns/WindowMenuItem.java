@@ -77,7 +77,7 @@ class WindowMenuItem extends JMenuItem implements PropertyChangeListener,
       frame.setIcon(false);
     }
     catch(java.beans.PropertyVetoException ex){
-      System.out.println("Couldn´t select or deiconify the frame");
+      System.out.println("Couldn't select or deiconify the frame");
     }
   }
 

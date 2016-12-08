@@ -28,7 +28,7 @@ package javanns;
 /**
  * this class represents a link between two units
  * it just contains the kernel numbers of the units it is between, so if
- * some units are deleted while a link object is held, this object doesn´t
+ * some units are deleted while a link object is held, this object doesn't
  * represent the original link anymore!
  */
 public class Link {

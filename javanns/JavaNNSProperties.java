@@ -109,13 +109,13 @@ public class JavaNNSProperties extends Properties implements ActionListener,
     // or from the server
     // if this is not possible, JavaNNS can not start
     if( !loadDefaults() ) throw
-      new Exception("Couldn´t load the default properties.\nWrong release!");
+      new Exception("Couldn't load the default properties.\nWrong release!");
 
     // then it tries to load the individual properties from the user home directory
-    // if this isn´t possible, it makes a deep copy of the default properties
+    // if this isn't possible, it makes a deep copy of the default properties
     if( !loadProperties() ) copyDefaults();
 
-    // then it checks, whether it´s possible to save manipulated properties
+    // then it checks, whether it's possible to save manipulated properties
     try{
       if( System.getSecurityManager() != null )
         System.getSecurityManager().checkWrite(PROPERTIES_FILENAME);

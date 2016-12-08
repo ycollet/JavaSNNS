@@ -211,7 +211,7 @@ class CCPanel extends JTabbedPane implements ActionListener{
         return;
       }
 
-      // sollte eigentlich der kernel übernehmen:
+      // sollte eigentlich der kernel ubernehmen:
       network.deselectUnits();
       int type;
       for( Unit u=network.getFirstUnit(); u!=null; u=network.getNextUnit() ){

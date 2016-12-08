@@ -1202,7 +1202,7 @@ class Snns extends JFrame implements ActionListener,
           found = true;
           try{ frames[i].setIcon( false ); }
           catch( Exception ex ){
-            showException( "The LinkPanel couldn´t be deiconified" );
+            showException( "The LinkPanel couldn't be deiconified" );
           }
           frames[i].toFront();
         }

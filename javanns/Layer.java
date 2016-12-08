@@ -54,7 +54,7 @@ public class Layer{
     //            ACHTUNG :
     // Layer kriegt nur noch die nach seiner Konstruktion erstellten Units mit !
     // Es gibt sonst Duplikate in einer Layer, da bei einem
-    // NetworkEvent.UNITS_CREATED nicht überprüft wird, ob die Unit schon
+    // NetworkEvent.UNITS_CREATED nicht uberpruft wird, ob die Unit schon
     // registriert war!
   }
 /*----------------------- public methods -------------------------------------*/

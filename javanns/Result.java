@@ -42,7 +42,7 @@ public class Result extends LASAdapter{
     accessory = new ResultAccessory();
   }
 
-  public String getKeyword(){ return "braucht´s nich" ; }
+  public String getKeyword(){ return "braucht's nich" ; }
 
   public String getFileEnding(){ return "res"; }
 

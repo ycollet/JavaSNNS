@@ -70,7 +70,7 @@ public class Network extends LASAdapter {
   public Network( Snns snns ) throws Exception{
     this.snns = snns;
     if( !loadKernel()) throw
-      new Exception("The system couldn´t find the library SNNS_jkr\nJavaNNS couldn´t start.");
+      new Exception("The system couldn't find the library SNNS_jkr\nJavaNNS couldn't start.");
     layers = new Layers( this );
     new NetChangeListener();
     /*
@@ -92,7 +92,7 @@ public class Network extends LASAdapter {
   /**
    * method tries to load the library
    * it first tries to find it at the place specified by the properties entry
-   * if this wasn´t possible, an dialog is shown to ask the user, whether he
+   * if this wasn't possible, an dialog is shown to ask the user, whether he
    * knows the place of the library or where it is to put. In the last case
    * the method extracts the library to the specified path from the jar-file, if
    * this could be found
@@ -135,7 +135,7 @@ public class Network extends LASAdapter {
   boolean extractLibraryFromJar(String dll_path) {
     File jar = new File(Snns.JAR_FILE_NAME);
     if( !jar.exists() ) throw new
-      UnsatisfiedLinkError("Couldn´t find the JavaNNS.jar file");
+      UnsatisfiedLinkError("Couldn't find the JavaNNS.jar file");
 
     try {
       JarFile jf = new JarFile(jar);
@@ -647,8 +647,8 @@ public class Network extends LASAdapter {
   public int getMaxYCoordinate(){ return max_coord[1]; }
 
 
-// Methode, die aus Traditionsgründen auf's KernelInterface draufgepackt wurde,
-// deren Notwendigkeit noch geklärt werden muß:
+// Methode, die aus Traditionsgrunden auf's KernelInterface draufgepackt wurde,
+// deren Notwendigkeit noch geklart werden muss:
   public int getNoOfSubpats(){ return ki.subpatterns; }
 
 /*----------------------- selected units -------------------------------------*/
@@ -976,7 +976,7 @@ public class Network extends LASAdapter {
     LinkData[] lData = uda.lData;
     noAll = ki.getNoOfUnits();
 
-    // default units an die bestehenden Units anfügen:
+    // default units an die bestehenden Units anfugen:
     for( i=0; i<uData.length; i++ ) ki.createDefaultUnit();
 
     if( noAll > 0 ){
@@ -1013,7 +1013,7 @@ public class Network extends LASAdapter {
           }
         }
 
-        // an der alten Position löschen:
+        // an der alten Position loschen:
         for( j=0; j<oldSources.size(); j++ ){
           source = ( (Integer)oldSources.elementAt(j) ).intValue();
           ki.isConnected( source );
@@ -1031,7 +1031,7 @@ public class Network extends LASAdapter {
       }
     }
 
-    // gelöschte units einbauen:
+    // geloschte units einbauen:
     Unit[] units = new Unit[ uData.length ];
     for( i=0; i<uData.length; i++ ){
       unit = new Unit(ki, uData[i].number);
@@ -1041,7 +1041,7 @@ public class Network extends LASAdapter {
       units[i] = unit;
     }
 
-    // gelöschte links einbauen:
+    // geloschte links einbauen:
     createLinks( lData, false );
     fireEvent( NetworkEvent.UNITS_CREATED, units );
     return units;
@@ -1104,7 +1104,7 @@ public class Network extends LASAdapter {
   private UnitData[] deleteOnlyUnits( Unit[] units ){
     UnitData[] data = new UnitData[ units.length ];
     int[] list = new int[ units.length ];
-    sort( units ); // <---- WICHTIG FÜR LAYERS !!!
+    sort( units ); // <---- WICHTIG FUR LAYERS !!!
     for( int i=0; i<data.length; i++ ) {
       list[i] = units[i].getNumber();
       data[i] = new UnitData( units[i] );

@@ -571,7 +571,7 @@ class AnalyzerPanel extends JPanel implements ActionListener,
 
     jcbErrors = new JComboBox();
     jcbErrors.addItem( "\u03a3|t-o|" );
-    jcbErrors.addItem( "\u03a3|t-o|²" );
+    jcbErrors.addItem( "\u03a3|t-o|^2" );
     jcbErrors.addItem( "|t-o|" );
     jcbErrors.addActionListener( this );
 

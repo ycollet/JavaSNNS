@@ -294,7 +294,7 @@ public class DPointSet extends DComponent
     if( size != y.getSize() ) throw
       new ArrayStoreException(
         "The number of x-values is not equal to the number of y-values.\n"
-        +"The size of the DPointSet isn´t clear."
+        +"The size of the DPointSet isn't clear."
       );
     return size;
   }

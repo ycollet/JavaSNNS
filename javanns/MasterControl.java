@@ -118,7 +118,7 @@ class MasterControl{
    * Trains the network by using all patterns.
    *
    * @param steps training steps (cycles, epochs)
-   * @exception throws an Exception when it wasn´t possible to set one of the currently
+   * @exception throws an Exception when it wasn't possible to set one of the currently
    *            choosen functions
    */
   public void learn(int steps, ThreadChief tc) throws Exception{

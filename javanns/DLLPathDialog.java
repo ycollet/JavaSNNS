@@ -38,7 +38,7 @@ import javax.swing.*;
 import java.io.File;
 
 /**
-   * DLLPathDialog opens an JDialog when JavaNNS couldn´t find the library.
+   * DLLPathDialog opens an JDialog when JavaNNS couldn't find the library.
    * This may be a result, that there exists no such library, or it is not
    * in one of the systems library paths.
    * This dialog enables the user to specify where he wants to write the
